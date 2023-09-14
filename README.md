@@ -85,4 +85,46 @@ Fill the data
 ### Recoverability
 Fill the data
 
+## Solution
 
+### Road Warrior Customer Journey
+Fill the data
+### Component Architecture
+Fill the data
+### Integrated Architecture
+Fill the data
+### Physical Architecture
+Fill the data
+
+## Deep Dive On Central Elements
+
+### Email Polling Mechanism
+Fill the data
+### Trip Update Service
+Fill the data
+### Trip Views
+Fill the data
+
+## MVP Release Plan
+### Target 1. Marketing and Analytics
+Fill the data
+### Target 2. Mobile App Menu
+Fill the data
+### Target 3. Mobile App Orders
+Fill the data
+### Target 4. Web Orders
+
+## Architecture Decision Record
+Fill the data
+### ADR 1. Microservices Pattern
+Fill the data
+### ADR 2. Serverless
+Fill the data
+### ADR 3. 3rd Party Analytics
+Fill the data
+### ADR 4. Trip Update Service
+Fill the data
+### ADR 5. Database
+Fill the data
+### ADR 6. Caching
+Fill the data
