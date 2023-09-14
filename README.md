@@ -1,6 +1,8 @@
 # katas-tech-power-rangers
 The Road Warrior Architecture
 
+# Table of Contents
+```
 I. Overview
 II. Vision
 III. Goals and Opportunities
@@ -49,3 +51,6 @@ IX. ADRs
   ADR 7. Newsletters and Client Communication
   ADR 8. Smart Fridge Access will be Controlled Both on Prem and via CDN
   ADR 9. Google Firebase will be used as Presentation Layer
+```
+
+## I. Overview
