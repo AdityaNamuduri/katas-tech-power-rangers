@@ -67,4 +67,22 @@ Our vision is to empower individuals to explore more, stress less, and make the 
 *
 *
 *
+## Architectural Characteristics
+The key properties and features that describe the design and behavior of The Road Warrior
+
+### Security 
+Fill the data
+### Scalability
+Fill the data
+### Performance
+Fill the data
+### Reliability
+Fill the data
+### Availability
+Fill the data
+### Elasticity
+Fill the data
+### Recoverability
+Fill the data
+
 
