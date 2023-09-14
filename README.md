@@ -96,6 +96,7 @@ Fill the data
 ### Physical Architecture
 Fill the data
 
+
 ## Deep Dive On Central Elements
 
 ### Email Polling Mechanism
@@ -105,6 +106,7 @@ Fill the data
 ### Trip Views
 Fill the data
 
+
 ## MVP Release Plan
 ### Target 1. Marketing and Analytics
 Fill the data
@@ -113,6 +115,7 @@ Fill the data
 ### Target 3. Mobile App Orders
 Fill the data
 ### Target 4. Web Orders
+
 
 ## Architecture Decision Record
 Fill the data
