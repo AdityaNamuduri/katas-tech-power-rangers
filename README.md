@@ -299,8 +299,6 @@ Fill the data
 
 ## IX. UI Interfaces
 
-### Desktop:
-![](diagrams/the-road-warrior-desktop.png)
-
-### Mobile:
-![](diagrams/the-road-warrior-mobile.png)
+Desktop             |  Mobile
+:-------------------------:|:-------------------------:
+<img src="./diagrams/the-road-warrior-desktop.png" height="400"> |  <img src="./diagrams/the-road-warrior-mobile.png" height="400">
