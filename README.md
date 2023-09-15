@@ -26,18 +26,18 @@ VI. Deep Dive On Central Elements
     2. Trip Update Service
     3. Trip Views
 VII. MVP Release Plan
-  Target 1. Marketing and Analytics
-  Target 2. Mobile App Menu
-  Target 3. Mobile App Orders
-  Target 4. Web Orders
+	Target 1. Design and Discovery:
+    Target 2. Building Headless System:
+    Target 3. Integrate with Web and App:
+    Target 4. Integration Testing and Launch:
 VIII. Architecture Decision Eecord
-  ADR 1. Microservices Pattern
-  ADR 2. Serverless
-  ADR 3. 3rd Party Analytics
-  ADR 4. Trip Update Service
-  ADR 5. Database
-  ADR 6. Caching
-  ADR 7. Customer Suppoert as Service
+    ADR 1. Microservices Pattern
+    ADR 2. Serverless
+    ADR 3. 3rd Party Analytics
+    ADR 4. Trip Update Service
+    ADR 5. Database
+    ADR 6. Caching
+    ADR 7. Customer Suppoert as Service
 ```
 
 ## I. Overview
