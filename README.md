@@ -169,7 +169,7 @@ Here is a list of customer interaction components.
 ![](diagrams/System-Level-Architecture.jpg)
 Fill the data
 ### Component Level Architecture
-![](diagrams/Component-Level-Architecture.jpg)
+![](diagrams/Component-Level-Architecture-1.jpg)
 Fill the data
 ### Physical Architecture
 Fill the data
