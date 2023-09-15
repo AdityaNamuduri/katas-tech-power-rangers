@@ -38,6 +38,7 @@ VIII. Architecture Decision Eecord
     ADR 5. Database
     ADR 6. Caching
     ADR 7. Customer Suppoert as Service
+IX. UI Interfaces
 ```
 
 ## I. Overview
@@ -176,7 +177,15 @@ Fill the data
 ## Deep Dive On Central Elements
 
 ### Email Polling Mechanism
-Fill the data
+![](diagrams/email-mechanism.png)
+
+Summary:
+
+1. The email polling mechanism fetches travel-related emails, filters and whitelists them, and updates the dashboard in real-time.
+2. Users can manually manage their reservations and share trip information on social media platforms.
+3. The system provides a rich user interface across all platforms, integration with existing travel systems, and international compatibility.
+4. End-of-year summary reports are generated, and analytical data is gathered for travel trend analysis and insights.
+5. The system ensures high availability with minimal downtime and fast response times for web and mobile platforms.
 ### Trip Update Service
 Fill the data
 ### Trip Views
@@ -214,6 +223,63 @@ Here is a list of targets to achieve for the MVP release.
 * Launch: Once testing is successful and the system is stable, launch the MVP to the broader user base.
 
 ## Architecture Decision Records
+
+### ADR 1: Technology Stack Selection
+- Decision: Use React Native for mobile app development and a Single Page Application (SPA) architecture for the web application.
+- Rationale: React Native offers a rich user interface and enables code reuse across platforms. SPA architecture provides a smooth user experience.
+
+### ADR 2: Email Parsing and Filtering
+- Decision: Implement an email parsing and filtering mechanism to extract travel-related information and whitelist trusted sources.
+- Rationale: Polling email and filtering ensures that relevant travel information is captured accurately and securely.
+
+### ADR 3: Integration with Travel Systems
+- Decision: Integrate with existing travel systems, such as SABRE and APOLLO, to update travel details and receive real-time updates.
+- Rationale: Seamless integration with travel systems ensures accurate and timely information for users.
+
+### ADR 4: Real-time Updates in Mobile App and Web Dashboard
+- Decision: Implement a real-time update mechanism to display travel updates within 5 minutes of generation by the source.
+- Rationale: Providing timely updates enhances user experience and gives the app a competitive advantage.
+
+### ADR 5: Manual Reservation Management
+- Decision: Allow users to manually add, update, and delete existing reservations.
+- Rationale: Manual reservation management gives users full control over their travel plans and allows flexibility in managing their trips.
+
+### ADR 6: Automatic Removal of Completed Trips
+- Decision: Automatically remove trip items from the dashboard once the trip is complete.
+- Rationale: Keeping the dashboard clutter-free improves user experience and helps users focus on current and upcoming trips.
+
+### ADR 7: Trip Sharing via Social Media Integration
+- Decision: Enable users to share their trip information through integration with standard social media sites.
+- Rationale: Social media integration allows users to share their travel experiences with friends and family, expanding the platform's reach.
+
+### ADR 8: End-of-Year Summary Reports
+- Decision: Provide users with comprehensive end-of-year summary reports containing various travel metrics.
+- Rationale: Offering detailed reports gives users insights into their travel patterns and enhances the value provided by the platform.
+
+### ADR 9: Analytics for Travel Data
+- Decision: Collect and analyze user trip data for travel trends, vendor preferences, cancellation frequency, etc.
+- Rationale: Analyzing trip data can provide valuable insights for the business and help improve the platform's features and functionality.
+
+### ADR 10: High Availability and Performance Requirements
+- Decision: Ensure the system is highly available with a maximum of 5 minutes per month of unplanned downtime.
+- Rationale: Users rely on the system for managing their trips, so high availability is crucial to provide a seamless experience.
+
+### ADR 11: Real-time Response Time Requirements
+- Decision: Aim for a web response time of 800ms and a mobile first-contentful paint of under 1.4 seconds.
+- Rationale: Fast response times on both web and mobile platforms contribute to a smooth and responsive user experience.
+
+### ADR 12: International Support
+- Decision: Design the system to work internationally, considering language, currency, and travel system integration requirements.
+- Rationale: The platform should cater to users from various countries and ensure seamless travel management regardless of their location.
+
+### ADR 13: Integration with Preferred Travel Agency
+- Decision: Integrate with the preferred travel agency to enable quick problem resolution and provide personalized support.
+- Rationale: Collaboration with the preferred travel agency can enhance customer satisfaction, resolve issues promptly, and streamline the support process.
+
+
+
+
+
 Fill the data
 ### ADR 1. Microservices Pattern
 Fill the data
@@ -228,3 +294,12 @@ Fill the data
 ### ADR 6. Caching
 Fill the data
 ### ADR 7. Internationalization
+
+
+## IX. UI Interfaces
+
+### Desktop:
+![](diagrams/the-road-warrior-desktop.png)
+
+### Mobile:
+![](diagrams/the-road-warrior-mobile.png)
