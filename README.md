@@ -87,8 +87,10 @@ Fill the data
 
 ## Solution
 
-### Road Warrior Customer Journey
-Fill the data
+### Road Warrior Customer Interaction
+
+![](diagrams/Customer.JPG)
+
 ### Component Architecture
 Fill the data
 ### Integrated Architecture
