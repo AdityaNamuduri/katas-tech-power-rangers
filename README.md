@@ -26,10 +26,10 @@ VI. Deep Dive On Central Elements
     2. Trip Update Service
     3. Trip Views
 VII. MVP Release Plan
-	Target 1. Design and Discovery:
-    Target 2. Building Headless System:
-    Target 3. Integrate with Web and App:
-    Target 4. Integration Testing and Launch:
+    Target 1. Design and Discovery
+    Target 2. Building Headless System
+    Target 3. Integrate with Web and App
+    Target 4. Integration Testing and Launch
 VIII. Architecture Decision Eecord
     ADR 1. Microservices Pattern
     ADR 2. Serverless
