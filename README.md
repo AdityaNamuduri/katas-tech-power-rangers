@@ -54,12 +54,65 @@ Our vision is to empower individuals to explore more, stress less, and make the 
 
 ### Functional Requirements
 
-*
-*
-*
-*
-*
-*
+#### Customer Flow 1: User Registration and Onboarding
+* User visits the startup's website or mobile app.
+* User clicks on the "Sign Up" or "Create Account" button.
+* User provides their email address to register.
+* The system sends a verification email to the user's provided email address.
+* User verifies their email by clicking on the link in the email.
+* User completes their profile by adding their name, contact information, and a profile picture (optional).
+* User is now onboarded and can start using the trip management dashboard.
+
+#### Customer Flow 2: Polling and Filtering Emails
+* User logs into the dashboard.
+* User accesses the email integration feature.
+* The system starts polling the user's email inbox for travel-related emails.
+* User sets up filters to whitelist certain emails (e.g., confirmation emails from airlines, hotels, and car rental agencies).
+* The system filters and organizes these emails, displaying them in the dashboard.
+
+#### Customer Flow 3: Automatic Updates
+* User logs into the dashboard.
+* User views their upcoming trips.
+* The system interfaces with airline, hotel, and car rental systems to monitor travel details.
+* If there are updates (e.g., delays, cancellations, gate changes), the system updates the trip details in real-time.
+* Updates are reflected in the dashboard within 5 minutes, ensuring timely information for the user.
+
+#### Customer Flow 4: Manual Reservation Management
+* User logs into the dashboard.
+* User accesses the "Manage Reservations" section.
+* User can manually add, update, or delete existing reservations.
+* User inputs relevant details such as flight numbers, hotel bookings, and car rentals.
+* Changes made by the user are saved and reflected in the dashboard.
+
+#### Customer Flow 5: Trip Organization and Completion
+* User logs into the dashboard.
+* User views their trips, which are organized by upcoming and past trips.
+* Once a trip is completed, the system automatically removes the trip and associated details from the dashboard.
+
+#### Customer Flow 6: Sharing Trip Information
+* User logs into the dashboard.
+* User selects a specific trip they want to share.
+* User clicks on the "Share Trip" button.
+* The system provides options to interface with standard social media sites or share with specific individuals.
+* User shares their trip information with the desired audience.
+
+#### Customer Flow 7: Rich User Interface
+* User accesses the dashboard from various deployment platforms (web and mobile).
+* The dashboard provides a visually appealing and user-friendly interface across all devices.
+* Users can easily navigate, view, and interact with their trip details.
+
+#### Customer Flow 8: End-of-Year Summary Reports
+* User logs into the dashboard.
+* User accesses the "Reports" or "Analytics" section.
+* The system generates end-of-year summary reports with various travel metrics (e.g., travel trends, locations visited, vendor preferences, cancellations, and updates).
+* Users can view, download, or share these reports for their travel analysis.
+
+#### Customer Flow 9: Data Gathering for Travel Analytics
+* As users continue to use the dashboard for trip management, the system gathers analytical data from their trips.
+* This data is used for various purposes, including identifying travel trends, preferences, and analyzing the frequency of cancellations and updates.
+* The startup can use this data for business intelligence and improving the user experience.
+* These customer flows outline how users interact with the startup's online trip management dashboard, ensuring a seamless and feature-rich experience for travelers.
+
 ### Technical Requirements
 *
 *
@@ -133,3 +186,4 @@ Fill the data
 Fill the data
 ### ADR 6. Caching
 Fill the data
+### ADR 7. Internationalization
