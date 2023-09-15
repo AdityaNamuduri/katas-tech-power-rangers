@@ -135,20 +135,27 @@ Our vision is to empower individuals to explore more, stress less, and make the 
 
 ## Architectural Characteristics
 The key properties and features that describe the design and behavior of The Road Warrior
-### Security 
-Fill the data
-### Scalability
-Fill the data
-### Performance
-Fill the data
-### Reliability
-Fill the data
-### Availability
-Fill the data
-### Elasticity
-Fill the data
-### Recoverability
-Fill the data
+
+#### Security:
+Why Chosen: Security is of paramount importance because the application will handle sensitive user data, including personal information and travel details. Travelers need assurance that their data will be protected from unauthorized access, breaches, and cyber threats. Implementing robust security measures is essential to build trust and ensure compliance with data protection regulations.
+
+#### Scalability:
+Why Chosen: Scalability is critical because your MVP aims to serve 2 million active users per week out of a total of 15 million users. To accommodate rapid user growth and varying levels of traffic, a scalable architecture is necessary. It ensures that the system can handle increased loads without performance degradation or downtime, providing a smooth user experience.
+
+#### Performance:
+Why Chosen: Performance directly impacts user satisfaction. Travelers expect a responsive and fast application when managing their trips. Implementing performance optimization measures, such as caching, CDN usage, and efficient database queries, ensures that the system delivers quick response times, even during peak usage periods.
+
+#### Reliability:
+Why Chosen: Reliability is crucial because travelers rely on the system to access their travel information, which can be time-sensitive. Unreliable systems can lead to frustration and disruptions in travel plans. Redundancy, failover mechanisms, and real-time monitoring ensure that the system remains available and dependable.
+
+#### Availability:
+Why Chosen: Availability is key to providing uninterrupted service to users. Travel management can happen at any time, and downtime can lead to inconvenience for travelers. High availability architecture, geographical redundancy, and adherence to service level agreements (SLAs) ensure that the system is accessible when users need it.
+
+#### Elasticity:
+Why Chosen: Elasticity complements scalability by allowing the system to adapt to changing demands in real-time. It ensures efficient resource allocation and cost optimization. Elasticity enables the system to handle sudden traffic spikes without overprovisioning, which can be cost-effective in a dynamic environment.
+
+#### Recoverability:
+Why Chosen: Recoverability is essential to minimize data loss and downtime in case of unexpected events, such as hardware failures, natural disasters, or cyberattacks. Data backup, disaster recovery planning, and backup systems provide a safety net to quickly restore operations and minimize disruptions.
 
 ## Solution
 
