@@ -29,11 +29,11 @@ VII. MVP Release Plan
     Target 4. Integration Testing and Launch
 VIII. Architecture Decision Eecord
     ADR 1. React Native for Mobile and SPA for Web
-	ADR 2. Microservices Pattern
-	ADR 3. Serverless
-	ADR 4. 3rd Party Analytics
-	ADR 5. Database
-	ADR 6. Internationalization
+    ADR 2. Microservices Pattern
+    ADR 3. Serverless
+    ADR 4. 3rd Party Analytics
+    ADR 5. Database
+    ADR 6. Internationalization
 IX. UI Interfaces
 ```
 
