@@ -34,6 +34,7 @@ VIII. Architecture Decision Eecord
     ADR 4. 3rd Party Analytics
     ADR 5. Database
     ADR 6. Internationalization
+    ADR 7. Pub/Sub Module
 IX. UI Interfaces
 ```
 
@@ -239,6 +240,10 @@ Here is a list of targets to achieve for the MVP release.
 ### ADR 6. Internationalization
 - Decision: Internationalization is crucial to ensure that the application is accessible and user-friendly for a global audience.
 - Rationale: It enables users from different regions to interact with the application in their preferred language and format. We will determine the user's preferred language based on browser settings or user preferences collected during user registration. This will ensure that users are presented with content in their preferred language by default. To handle locale-specific date, time, currency, and numeric formatting, we will utilize the localization features provided by i18next and ResourceBundle. This will ensure that data is presented correctly based on the user's locale.
+
+### ADR 7. Pub/Sub Module
+- Decision: We chose the publish-subscribe (pub-sub) model for email polling instead of continuous polling of email accounts for new messages.
+- Rationale: This approach reduces resource overhead significantly, especially given our user base of nearly 15 million accounts. We only react when there is a new message.
 
 ## IX. UI Interfaces
 
