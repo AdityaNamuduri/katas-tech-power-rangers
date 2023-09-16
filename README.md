@@ -22,22 +22,19 @@ V. Solution
     3. Integrated Architecture
     4. Physical Architecture
 VI. Deep Dive On Central Elements
-    1. Email Polling Mechanism
-    2. Trip Update Service
-    3. Trip Views
+    1. Email Polling & Trip Update Mechanism
 VII. MVP Release Plan
     Target 1. Design and Discovery
     Target 2. Building Headless System
     Target 3. Integrate with Web and App
     Target 4. Integration Testing and Launch
 VIII. Architecture Decision Eecord
-    ADR 1. Microservices Pattern
-    ADR 2. Serverless
-    ADR 3. 3rd Party Analytics
-    ADR 4. Trip Update Service
-    ADR 5. Database
-    ADR 6. Caching
-    ADR 7. Customer Suppoert as Service
+    ADR 1. React Native for Mobile and SPA for Web
+	ADR 2. Microservices Pattern
+	ADR 3. Serverless
+	ADR 4. 3rd Party Analytics
+	ADR 5. Database
+	ADR 6. Internationalization
 IX. UI Interfaces
 ```
 
@@ -168,30 +165,28 @@ Here is a list of customer interaction components.
 ### System Level Architecture
 ![](diagrams/System-Level-Architecture.jpg)
 Fill the data
-### Component Level Architecture
+### Detailed Architecture
 ![](diagrams/Component-Level-Architecture-1.jpg)
-Fill the data
-### Physical Architecture
 Fill the data
 
 
 ## Deep Dive On Central Elements
 
-### Email Polling Mechanism
-![](diagrams/email-mechanism.png)
+### Email Polling & Trip Update Mechanism
+
+![](diagrams/EmailPollingService.png)
 
 Summary:
-
-1. The email polling mechanism fetches travel-related emails, filters and whitelists them, and updates the dashboard in real-time.
-2. Users can manually manage their reservations and share trip information on social media platforms.
-3. The system provides a rich user interface across all platforms, integration with existing travel systems, and international compatibility.
-4. End-of-year summary reports are generated, and analytical data is gathered for travel trend analysis and insights.
-5. The system ensures high availability with minimal downtime and fast response times for web and mobile platforms.
-### Trip Update Service
-Fill the data
-### Trip Views
-Fill the data
-
+1.	User sign up with google account 
+2.	User provides consent to watch emails.
+3.	Store refresh token in database, which will be used for fetching emails when new email is notified.
+4.	Watch notification received on new email.
+5.	Email polling service receives the message id.
+6.	Email polling service fetches refresh token from database.
+7.	Email polling service fetches email from gmail using refresh token and process for confirmation id.
+8.	Send confirmation id to trip update service.
+9.	Trip update service make call Sabre/Apollo for trip details.
+10.	Stores trip details in database
 
 ## MVP Release Plan
 
@@ -225,77 +220,29 @@ Here is a list of targets to achieve for the MVP release.
 
 ## Architecture Decision Records
 
-### ADR 1: Technology Stack Selection
+### ADR 1: React Native for Mobile and SPA for Web
 - Decision: Use React Native for mobile app development and a Single Page Application (SPA) architecture for the web application.
 - Rationale: React Native offers a rich user interface and enables code reuse across platforms. SPA architecture provides a smooth user experience.
 
-### ADR 2: Email Parsing and Filtering
-- Decision: Implement an email parsing and filtering mechanism to extract travel-related information and whitelist trusted sources.
-- Rationale: Polling email and filtering ensures that relevant travel information is captured accurately and securely.
+### ADR 2. Microservices Pattern
+- Decision: Microservices pattern as the foundation for our architecture.
+- Rationale: Independently deployable each service typically has its own source code repository and its own deployment pipeline, which builds, tests and deploys the service.This pattern was chosen to ensure that our architecture is well-structured, scalable, and easy to manage.
 
-### ADR 3: Integration with Travel Systems
-- Decision: Integrate with existing travel systems, such as SABRE and APOLLO, to update travel details and receive real-time updates.
-- Rationale: Seamless integration with travel systems ensures accurate and timely information for users.
+### ADR 3. Serverless
+- Decision: To adopt serverless computing as an architectural approach for developing and deploying components of our applications.
+- Rationale: Adoption of serverless computing reduces infrastructure management overhead, achieving auto-scalability, and optimizing costs. It allows us to focus on code development while the cloud provider manages infrastructure scaling and availability.
 
-### ADR 4: Real-time Updates in Mobile App and Web Dashboard
-- Decision: Implement a real-time update mechanism to display travel updates within 5 minutes of generation by the source.
-- Rationale: Providing timely updates enhances user experience and gives the app a competitive advantage.
+### ADR 4. 3rd Party Analytics
+- Decision: To integrate third-party analytics services, specifically Google Analytics, into our application architecture.
+- Rationale: Integrating a third-party analytics service allows us to gain deep insights into our application's performance and user behavior. It enables travel agencies and airline, hotel, and car rental companies to respond to issues in real-time, enables them to plan their marketing strategies and offer the customers better experience.
 
-### ADR 5: Manual Reservation Management
-- Decision: Allow users to manually add, update, and delete existing reservations.
-- Rationale: Manual reservation management gives users full control over their travel plans and allows flexibility in managing their trips.
-
-### ADR 6: Automatic Removal of Completed Trips
-- Decision: Automatically remove trip items from the dashboard once the trip is complete.
-- Rationale: Keeping the dashboard clutter-free improves user experience and helps users focus on current and upcoming trips.
-
-### ADR 7: Trip Sharing via Social Media Integration
-- Decision: Enable users to share their trip information through integration with standard social media sites.
-- Rationale: Social media integration allows users to share their travel experiences with friends and family, expanding the platform's reach.
-
-### ADR 8: End-of-Year Summary Reports
-- Decision: Provide users with comprehensive end-of-year summary reports containing various travel metrics.
-- Rationale: Offering detailed reports gives users insights into their travel patterns and enhances the value provided by the platform.
-
-### ADR 9: Analytics for Travel Data
-- Decision: Collect and analyze user trip data for travel trends, vendor preferences, cancellation frequency, etc.
-- Rationale: Analyzing trip data can provide valuable insights for the business and help improve the platform's features and functionality.
-
-### ADR 10: High Availability and Performance Requirements
-- Decision: Ensure the system is highly available with a maximum of 5 minutes per month of unplanned downtime.
-- Rationale: Users rely on the system for managing their trips, so high availability is crucial to provide a seamless experience.
-
-### ADR 11: Real-time Response Time Requirements
-- Decision: Aim for a web response time of 800ms and a mobile first-contentful paint of under 1.4 seconds.
-- Rationale: Fast response times on both web and mobile platforms contribute to a smooth and responsive user experience.
-
-### ADR 12: International Support
-- Decision: Design the system to work internationally, considering language, currency, and travel system integration requirements.
-- Rationale: The platform should cater to users from various countries and ensure seamless travel management regardless of their location.
-
-### ADR 13: Integration with Preferred Travel Agency
-- Decision: Integrate with the preferred travel agency to enable quick problem resolution and provide personalized support.
-- Rationale: Collaboration with the preferred travel agency can enhance customer satisfaction, resolve issues promptly, and streamline the support process.
-
-
-
-
-
-Fill the data
-### ADR 1. Microservices Pattern
-Fill the data
-### ADR 2. Serverless
-Fill the data
-### ADR 3. 3rd Party Analytics
-Fill the data
-### ADR 4. Trip Update Service
-Fill the data
 ### ADR 5. Database
-Fill the data
-### ADR 6. Caching
-Fill the data
-### ADR 7. Internationalization
+- Decision: We have decided to use MySQL as the RDBMS for the project.
+- Rationale: We chose this type of database because our project's data structure is well-suited to tabular, structured data.MySQL provides strong ACID (Atomicity, Consistency, Isolation, Durability) compliance, which is crucial for maintaining data integrity, consistency, and transactional reliability. MySQL offers scalability options, including the ability to horizontally scale through sharding or clustering to accommodate increased data volumes and user loads.
 
+### ADR 6. Internationalization
+- Decision: Internationalization is crucial to ensure that the application is accessible and user-friendly for a global audience.
+- Rationale: It enables users from different regions to interact with the application in their preferred language and format. We will determine the user's preferred language based on browser settings or user preferences collected during user registration. This will ensure that users are presented with content in their preferred language by default. To handle locale-specific date, time, currency, and numeric formatting, we will utilize the localization features provided by i18next and ResourceBundle. This will ensure that data is presented correctly based on the user's locale.
 
 ## IX. UI Interfaces
 
