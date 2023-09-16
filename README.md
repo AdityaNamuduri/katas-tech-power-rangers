@@ -51,7 +51,7 @@ Our vision is to empower individuals to explore more, stress less, and make the 
 
 ### Functional Requirements
 
-#### Customer Flow 1: User Registration and Onboarding
+#### Customer Flow 1: User Registration and On-boarding
 * User visits the startup's website or mobile app.
 * User clicks on the "Sign Up" or "Create Account" button.
 * User provides their email address to register.
@@ -121,7 +121,7 @@ Our vision is to empower individuals to explore more, stress less, and make the 
 * Front-End Optimization: Minimize page load times and optimize front-end code for speed.
 * Redundancy: Set up redundant systems to ensure continuous operation in case of hardware or software failures.
 * Monitoring: Implement real-time monitoring and alerting to detect and address issues promptly.
-* Failover Mechanisms: Establish failover mechanisms for critical components to minimize downtime.
+* Fail over Mechanisms: Establish fail over mechanisms for critical components to minimize downtime.
 * High Availability Architecture: Design the system with high availability in mind, minimizing single points of failure.
 * Geographical Distribution: Use geographical redundancy across data centers or regions to enhance availability.
 * Resource Scaling: Dynamically scale resources up or down based on demand, ensuring optimal resource utilization.
@@ -143,13 +143,13 @@ Why Chosen: Scalability is critical because your MVP aims to serve 2 million act
 Why Chosen: Performance directly impacts user satisfaction. Travelers expect a responsive and fast application when managing their trips. Implementing performance optimization measures, such as caching, CDN usage, and efficient database queries, ensures that the system delivers quick response times, even during peak usage periods.
 
 #### Reliability:
-Why Chosen: Reliability is crucial because travelers rely on the system to access their travel information, which can be time-sensitive. Unreliable systems can lead to frustration and disruptions in travel plans. Redundancy, failover mechanisms, and real-time monitoring ensure that the system remains available and dependable.
+Why Chosen: Reliability is crucial because travelers rely on the system to access their travel information, which can be time-sensitive. Unreliable systems can lead to frustration and disruptions in travel plans. Redundancy, fail over mechanisms, and real-time monitoring ensure that the system remains available and dependable.
 
 #### Availability:
 Why Chosen: Availability is key to providing uninterrupted service to users. Travel management can happen at any time, and downtime can lead to inconvenience for travelers. High availability architecture, geographical redundancy, and adherence to service level agreements (SLAs) ensure that the system is accessible when users need it.
 
 #### Elasticity:
-Why Chosen: Elasticity complements scalability by allowing the system to adapt to changing demands in real-time. It ensures efficient resource allocation and cost optimization. Elasticity enables the system to handle sudden traffic spikes without overprovisioning, which can be cost-effective in a dynamic environment.
+Why Chosen: Elasticity complements scalability by allowing the system to adapt to changing demands in real-time. It ensures efficient resource allocation and cost optimization. Elasticity enables the system to handle sudden traffic spikes without over provisioning, which can be cost-effective in a dynamic environment.
 
 #### Recoverability:
 Why Chosen: Recoverability is essential to minimize data loss and downtime in case of unexpected events, such as hardware failures, natural disasters, or cyberattacks. Data backup, disaster recovery planning, and backup systems provide a safety net to quickly restore operations and minimize disruptions.
@@ -173,7 +173,7 @@ Here is a list of customer interaction components.
 ![](diagrams/EmailPollingService.png)
 
 Summary:
-1.	User sign up with google account 
+1.	User sign up with Google account 
 2.	User provides consent to watch emails.
 3.	Store refresh token in database, which will be used for fetching emails when new email is notified.
 4.	Watch notification received on new email.
