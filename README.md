@@ -19,8 +19,7 @@ IV. Architectural Characteristics
 V. Solution
     1. Road Warrior Customer Journey
     2. Component Architecture
-    3. Integrated Architecture
-    4. Physical Architecture
+    3. Detailed Architecture
 VI. Deep Dive On Central Elements
     1. Email Polling & Trip Update Mechanism
 VII. MVP Release Plan
