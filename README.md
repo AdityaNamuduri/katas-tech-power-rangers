@@ -158,16 +158,13 @@ Why Chosen: Recoverability is essential to minimize data loss and downtime in ca
 
 ### Road Warrior Customer Interaction
 Here is a list of customer interaction components.
-
 ![](diagrams/Customer.JPG)
 
 ### System Level Architecture
 ![](diagrams/System-Level-Architecture.jpg)
-Fill the data
+
 ### Detailed Architecture
 ![](diagrams/Component-Level-Architecture-1.jpg)
-Fill the data
-
 
 ## Deep Dive On Central Elements
 
